@@ -5,6 +5,15 @@
 package task4_02;
 
 public class Main {
+    static String show(Address address) {
+        return "Address:" +
+                "\nindex: " + address.getIndex() +
+                ", \ncountry: '" + address.getCountry() + '\'' +
+                ", \ncity: '" + address.getCity() + '\'' +
+                ", \nstreet: '" + address.getStreet() + '\'' +
+                ", \nhouse: " + address.getHouse() +
+                ", \napartment: " + address.getApartment();
+    }
     public static void main(String[] args) {
         Address myAddress=new Address();
 
@@ -15,6 +24,6 @@ public class Main {
         myAddress.setCountry("Ukraine");
         myAddress.setStreet("Dybrovicka");
 
-        System.out.println(myAddress);
+        System.out.println(show(myAddress));
     }
 }
