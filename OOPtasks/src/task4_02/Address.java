@@ -55,15 +55,4 @@ public class Address {
     public void setApartment(int apartment) {
         this.apartment = apartment;
     }
-
-    @Override
-    public String toString() {
-        return "Address:" +
-                "\nindex: " + this.getIndex() +
-                ", \ncountry: '" + this.getCountry() + '\'' +
-                ", \ncity: '" + this.getCity() + '\'' +
-                ", \nstreet: '" + this.getStreet() + '\'' +
-                ", \nhouse: " + this.getHouse() +
-                ", \napartment: " + this.getApartment();
-    }
 }
